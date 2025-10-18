@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Trường Phục - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    <div class="particles" id="particles"></div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-sphere"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-nav">
+            <a href="#home" class="nav-item active" data-tooltip="Home">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#about" class="nav-item" data-tooltip="About">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#projects" class="nav-item" data-tooltip="Projects">
+                <i class="fas fa-th-large"></i>
+            </a>
+            <a href="#skills" class="nav-item" data-tooltip="Skills">
+                <i class="fas fa-code"></i>
+            </a>
+            <a href="#certificates" class="nav-item" data-tooltip="Certificates">
+                <i class="fas fa-certificate"></i>
+            </a>
+            <a href="#contact" class="nav-item" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="https://facebook.com/phucdev.z" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/_phucdev.z" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/agencyluuvong" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/phucdevz" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <div class="hero-card">
+        <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="greeting typewriter" data-text="Xin chào,"></span>
+                                <span class="name">I'm Nguyễn Trường Phục</span>
+                            </h1>
+                            <p class="hero-description">
+                                Từ ý tưởng đến sản phẩm, từ khái niệm đến trải nghiệm – tôi biến mọi giấc mơ số hóa thành hiện thực bằng sức mạnh của logic và sáng tạo.
+                            </p>
+                            <div class="hero-actions">
+                                <button class="btn-primary">
+                                    <span>Xem Portfolio</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <a href="docs/nguyentruongphuc_cv.pdf" class="btn-secondary" download="NguyenTruongPhuc_CV.pdf">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download CV</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="hero-image-container">
+                                <img src="images/banner_avt.png" alt="Nguyễn Trường Phục" class="hero-image">
+                                <div class="floating-elements">
+                                    <div class="floating-icon icon-1"><i class="fas fa-code"></i></div>
+                                    <div class="floating-icon icon-2"><i class="fas fa-palette"></i></div>
+                                    <div class="floating-icon icon-3"><i class="fas fa-mobile-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">9</div>
+                        <div class="stat-label">GitHub Followers</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Client Rating</div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+            <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Tìm hiểu thêm về tôi</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-content-wrapper">
+                        <div class="about-text">
+                            <p>
+                    Xin chào! Tôi là Nguyễn Trường Phục, một sinh viên năm 3 đang theo học tại UTH University. 
+                    Với niềm đam mê công nghệ và sự sáng tạo, tôi luôn tìm kiếm những cơ hội để phát triển 
+                    bản thân và đóng góp vào sự phát triển của cộng đồng công nghệ.
+                </p>
+                            <p>
+                                Tôi có kinh nghiệm trong việc phát triển web, thiết kế UI/UX và tạo ra các ứng dụng 
+                                di động. Luôn học hỏi và cập nhật những công nghệ mới nhất để mang lại trải nghiệm 
+                                tốt nhất cho người dùng.
+                            </p>
+                        </div>
+                        <div class="about-photo">
+                            <img src="images/banner_avt2.png" alt="Nguyễn Trường Phục - Profile" class="profile-photo">
+                        </div>
+                    </div>
+                    <div class="about-info">
+                    <div class="info-item">
+                        <div class="info-label">Trường học</div>
+                        <div class="info-value">UTH University</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Năm học</div>
+                        <div class="info-value">2023-2026</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Quê quán</div>
+                        <div class="info-value">Tiền Giang</div>
+                    </div>
+                        <div class="info-item">
+                            <div class="info-label">Chuyên ngành</div>
+                            <div class="info-value">Công nghệ thông tin</div>
+                        </div>
+                </div>
+                
+                <div class="career-objectives">
+                    <h3 class="objectives-title">Mục tiêu nghề nghiệp</h3>
+                    <div class="objectives-content">
+                        <div class="objective-item">
+                            <i class="fas fa-bullseye"></i>
+                            <div class="objective-text">
+                                <h4>Phát triển Full-Stack</h4>
+                                <p>Trở thành Full-Stack Developer chuyên nghiệp với khả năng phát triển cả frontend và backend</p>
+                            </div>
+                        </div>
+                        <div class="objective-item">
+                            <i class="fas fa-rocket"></i>
+                            <div class="objective-text">
+                                <h4>Khởi nghiệp công nghệ</h4>
+                                <p>Xây dựng startup riêng trong lĩnh vực EdTech hoặc HealthTech</p>
+                            </div>
+                        </div>
+                        <div class="objective-item">
+                            <i class="fas fa-users"></i>
+                            <div class="objective-text">
+                                <h4>Lãnh đạo kỹ thuật</h4>
+                                <p>Trở thành Tech Lead và đào tạo thế hệ developer trẻ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hobbies-section">
+                    <h3 class="hobbies-title">Sở thích</h3>
+                    <div class="hobbies-content">
+                        <div class="hobbies-photo">
+                            <img src="images/banner_avt3.png" alt="Sở thích cá nhân" class="hobby-photo">
+                        </div>
+                        <div class="hobbies-grid">
+                            <div class="hobby-item">
+                                <i class="fas fa-code"></i>
+                                <span>Lập trình</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-book"></i>
+                                <span>Đọc sách</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-music"></i>
+                                <span>Âm nhạc</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Gaming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="languages-section">
+                    <div class="languages-content">
+                        <div class="languages-photo">
+                            <img src="images/banner_avt1.png" alt="Ngôn ngữ" class="language-photo">
+                        </div>
+                        <div class="languages-info">
+                            <h3 class="languages-title">Ngôn ngữ</h3>
+                            <div class="languages-grid">
+                                <div class="language-item">
+                                    <div class="language-info">
+                                        <span class="language-name">Tiếng Việt</span>
+                                        <span class="language-level">Bản ngữ</span>
+                                    </div>
+                                    <div class="language-bar">
+                                        <div class="language-progress" data-width="100"></div>
+                                    </div>
+                                </div>
+                                <div class="language-item">
+                                    <div class="language-info">
+                                        <span class="language-name">Tiếng Anh</span>
+                                        <span class="language-level">Trung cấp</span>
+                                    </div>
+                                    <div class="language-bar">
+                                        <div class="language-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+            <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Một số dự án gần đây</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/vactrack-v2-banner.svg" alt="Vactrack V2 Banner" class="project-banner">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/phucdevz/Vactrack_Project_V2_APP" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/phucdevz/Vactrack_Project_V2_APP" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vactrack V2 - Digital Health Passport</h3>
+                        <p class="project-description">
+                            Ứng dụng theo dõi tiêm chủng và hộ chiếu sức khỏe số hiện đại. 
+                            Quản lý hồ sơ tiêm chủng, nhắc nhở lịch tiêm, và xác minh trạng thái sức khỏe.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Jetpack Compose</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Room</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/vactrack-v1-banner.svg" alt="Vactrack V1 Banner" class="project-banner">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/phucdevz/Vactrack_Project_V1" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/phucdevz/Vactrack_Project_V1" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vactrack V1 - Vaccine Tracker</h3>
+                        <p class="project-description">
+                            Ứng dụng theo dõi tiêm chủng thế hệ đầu tiên. 
+                            Quản lý hồ sơ tiêm chủng cá nhân và gia đình với giao diện đơn giản, hiệu quả.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">XML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/wifiqr-banner.svg" alt="WiFiQR Banner" class="project-banner">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/phucdevz/WiFiQR" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/phucdevz/WiFiQR" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">WiFiQR - QR Code Generator</h3>
+                    <p class="project-description">
+                            Công cụ web nhẹ để tạo mã QR WiFi ngay lập tức. 
+                            Chỉ cần nhập tên mạng và mật khẩu để tạo mã QR có thể quét để kết nối WiFi.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">QR Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/multidriver-banner.svg" alt="MultiDriver Hub Banner" class="project-banner">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/phucdevz/MultiDriver_Hub" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/phucdevz/MultiDriver_Hub" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MultiDriver Hub - Google Drive Manager</h3>
+                    <p class="project-description">
+                            Ứng dụng desktop quản lý nhiều tài khoản Google Drive đồng thời. 
+                            Tích hợp Python GUI và Node.js backend với tính năng tìm kiếm nâng cao, đồng bộ thông minh và báo cáo phân tích.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PySide6</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Google Drive API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/bookverse-banner.svg" alt="Bookverse Banner" class="project-banner">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/phucdevz/Bookverse" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/phucdevz/Bookverse" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bookverse - Book Marketplace</h3>
+                    <p class="project-description">
+                            Sàn thương mại điện tử chuyên về sách với đầy đủ tính năng mua bán. 
+                            Tích hợp Node.js backend và PHP frontend, hỗ trợ tìm kiếm, giỏ hàng, thanh toán và quản lý đơn hàng.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Những gì tôi giỏi</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">Frameworks & Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Spring Boot</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Flask</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Chứng chỉ & Giải thưởng</h2>
+            <p class="section-subtitle">Những thành tích đạt được</p>
+        </div>
+        <div class="certificates-content">
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Google Cloud Professional</h3>
+                        <p class="certificate-issuer">Google Cloud Platform</p>
+                        <p class="certificate-date">2024</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">AWS Solutions Architect</h3>
+                        <p class="certificate-issuer">Amazon Web Services</p>
+                        <p class="certificate-date">2024</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3 class="certificate-title">Hackathon Winner</h3>
+                        <p class="certificate-issuer">TechFest 2024</p>
+                        <p class="certificate-date">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+            <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Hãy làm việc cùng nhau</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>phucdeeptry723@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+84 777 768 214</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Cai Lậy, Tiền Giang</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+                </div>
+                <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+                </div>
+                <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Chủ đề" required>
+                </div>
+                <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Gửi tin nhắn
+                    </button>
+            </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 <span class="footer-highlight">phucdevz</span>. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com/phucdev.z" class="social-link" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/_phucdev.z" class="social-link" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/agencyluuvong" class="social-link" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://github.com/phucdevz" class="social-link" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
