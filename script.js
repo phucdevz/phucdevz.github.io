@@ -1,4 +1,3 @@
-// Enhanced Portfolio Website JavaScript
 class PortfolioApp {
     constructor() {
         this.currentSection = 'home';
@@ -275,7 +274,6 @@ class PortfolioApp {
         });
     }
 
-    // 3D Character Animation
     initCharacter3D() {
         const character = document.querySelector('.character-3d');
         if (!character) return;
@@ -390,7 +388,6 @@ class PortfolioApp {
             });
         };
         
-        // Animate on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -417,7 +414,6 @@ class PortfolioApp {
             });
         };
         
-        // Animate on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -440,7 +436,7 @@ class PortfolioApp {
             }
             scrollTimeout = setTimeout(() => {
                 
-            }, 16); // ~60fps
+            }, 16);
         });
 
         const images = document.querySelectorAll('img[data-src]');
