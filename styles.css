@@ -1,4 +1,3 @@
-/* CSS Variables */
 :root {
     --bg-primary: #0a0a0a;
     --bg-secondary: #111111;
@@ -25,7 +24,6 @@
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +44,6 @@ body {
     min-height: 100vh;
 }
 
-/* Background Effects */
 .bg-effects {
     position: fixed;
     top: 0;
@@ -105,7 +102,6 @@ body {
     }
 }
 
-/* Particles */
 .particles {
     position: absolute;
     top: 0;
@@ -142,7 +138,6 @@ body {
     }
 }
 
-/* Sidebar Navigation */
 .sidebar {
     position: fixed;
     top: 0;
@@ -314,7 +309,6 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* Main Content */
 .main-content {
     margin-left: 80px;
     min-height: 100vh;
@@ -340,7 +334,6 @@ body {
     transform: translateY(0);
 }
 
-/* Ensure all sections are visible */
 #home, #about, #projects, #skills, #contact {
     display: block !important;
     opacity: 1 !important;
@@ -380,7 +373,6 @@ body {
     }
 }
 
-/* Hero Section */
 .hero-container {
     display: flex;
     align-items: center;
@@ -444,7 +436,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Typewriter Effect */
 .typewriter {
     position: relative;
     display: inline-block;
@@ -574,7 +565,6 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* Ensure link buttons work like buttons */
 a.btn-secondary {
     text-decoration: none;
     color: inherit;
@@ -738,7 +728,6 @@ a.btn-secondary:hover {
     50% { transform: translateY(-20px) rotate(180deg); }
 }
 
-/* Stats Container */
 .stats-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -890,7 +879,6 @@ a.btn-secondary:hover {
     font-weight: 500;
 }
 
-/* Projects Section */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1017,7 +1005,6 @@ a.btn-secondary:hover {
     font-weight: 500;
 }
 
-/* Skills Section */
 .skills-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -1365,7 +1352,6 @@ a.btn-secondary:hover {
     box-shadow: var(--shadow-lg);
 }
 
-/* Animations */
 @keyframes slideInLeft {
     0% {
         opacity: 0;
@@ -1399,7 +1385,6 @@ a.btn-secondary:hover {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 1440px) {
     .hero-card {
         padding: 50px 40px;
@@ -1681,7 +1666,6 @@ a.btn-secondary:hover {
     }
 }
 
-/* Landscape Mobile */
 @media (max-width: 768px) and (orientation: landscape) {
     .hero-card {
         padding: 20px;
@@ -1712,7 +1696,6 @@ a.btn-secondary:hover {
     }
 }
 
-/* Extra Small Devices */
 @media (max-width: 360px) {
     .sidebar {
         width: 45px;
@@ -1770,7 +1753,6 @@ a.btn-secondary:hover {
     }
 }
 
-/* Ensure all elements are visible */
 .project-card, .skill-category, .about-card, .contact-item {
     opacity: 1 !important;
     transform: translateY(0) !important;
@@ -1782,7 +1764,6 @@ a.btn-secondary:hover {
     transform: translateY(0) !important;
 }
 
-/* Footer Styles */
 .footer {
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
     border-top: 1px solid var(--glass-border);
@@ -1860,7 +1841,6 @@ a.btn-secondary:hover {
     font-size: 1.1rem;
 }
 
-/* Footer Responsive */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -1896,7 +1876,6 @@ a.btn-secondary:hover {
     }
 }
 
-/* Career Objectives Styles */
 .career-objectives {
     margin-top: 3rem;
     padding: 2rem;
@@ -1983,7 +1962,6 @@ a.btn-secondary:hover {
     transform: scale(1.05);
 }
 
-/* Hobbies Styles */
 .hobbies-section {
     margin-top: 3rem;
     padding: 2rem;
@@ -2065,7 +2043,6 @@ a.btn-secondary:hover {
     color: var(--text-primary);
 }
 
-/* Languages Styles */
 .languages-section {
     margin-top: 3rem;
     padding: 2rem;
@@ -2243,7 +2220,6 @@ a.btn-secondary:hover {
     font-weight: 500;
 }
 
-/* Responsive Design for New Sections */
 @media (max-width: 768px) {
     .about-content-wrapper {
         flex-direction: column;
