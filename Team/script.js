@@ -565,7 +565,7 @@ function initMemberModal() {
             name: 'Nguyễn Trường Phục',
             role: 'Tech Lead & Full-stack Developer',
             avatar: './images/banner_avt.png',
-            description: 'Sinh viên năm 3 chuyên ngành c, đam mê phát triển web với JavaScript và React. Đã hoàn thành nhiều dự án học tập và tham gia các cuộc thi lập trình.',
+            description: 'Sinh viên năm 3 chuyên ngành Công nghệ Thông tin, đam mê phát triển web với JavaScript và React. Đã hoàn thành nhiều dự án học tập và tham gia các cuộc thi lập trình.',
             skills: ['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Git', 'MongoDB'],
             achievements: [
                 { icon: 'fas fa-graduation-cap', text: 'Sinh viên năm 3 - Đại học UTH' },
@@ -975,4 +975,5 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
