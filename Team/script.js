@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all functionality
     initCustomCursor();
     initNavigation();
     initScrollAnimations();
@@ -51,7 +50,6 @@ function initNavigation() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Mobile menu toggle
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -59,7 +57,6 @@ function initNavigation() {
         });
     }
     
-    // Smooth scrolling for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -74,7 +71,6 @@ function initNavigation() {
                 });
             }
             
-            // Close mobile menu
             if (navMenu.classList.contains('active')) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
@@ -82,7 +78,6 @@ function initNavigation() {
         });
     });
     
-    // Navbar background on scroll
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 100) {
@@ -107,7 +102,6 @@ function initScrollAnimations() {
         });
     }, observerOptions);
     
-    // Observe elements for animation
     const animatedElements = document.querySelectorAll('.team-card, .skill-bar, .project-card, .contact-item');
     animatedElements.forEach(el => {
         el.classList.add('fade-in');
@@ -123,18 +117,15 @@ function initTeamCards() {
         const avatar = card.querySelector('.member-avatar');
         const particles = card.querySelectorAll('.avatar-particle');
         
-        // Enhanced 3D hover effects
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'perspective(1500px) rotateX(8deg) rotateY(8deg) scale(1.02)';
             card3DContainer.style.transform = 'rotateY(15deg) rotateX(5deg) translateZ(30px)';
             
-            // Animate avatar particles
             particles.forEach((particle, i) => {
                 particle.style.animationPlayState = 'running';
                 particle.style.opacity = '1';
             });
             
-            // Add glow effect
             card.style.filter = 'drop-shadow(0 0 30px rgba(0, 245, 255, 0.3))';
         });
         
@@ -142,7 +133,6 @@ function initTeamCards() {
             card.style.transform = 'perspective(1500px) rotateX(0deg) rotateY(0deg) scale(1)';
             card3DContainer.style.transform = 'rotateY(0deg) rotateX(0deg) translateZ(0px)';
             
-            // Reset particles
             particles.forEach(particle => {
                 particle.style.animationPlayState = 'paused';
                 particle.style.opacity = '0.3';
@@ -151,7 +141,6 @@ function initTeamCards() {
             card.style.filter = 'none';
         });
         
-        // Advanced mouse tracking for 3D effect
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -165,7 +154,6 @@ function initTeamCards() {
             
             card3DContainer.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg) translateZ(${translateZ}px)`;
             
-            // Parallax effect for avatar
             if (avatar) {
                 const avatarRotateX = rotateX * 0.5;
                 const avatarRotateY = rotateY * 0.5;
@@ -173,7 +161,6 @@ function initTeamCards() {
             }
         });
         
-        // Staggered animation on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -187,14 +174,11 @@ function initTeamCards() {
         }, { threshold: 0.3 });
         
         observer.observe(card);
-        
-        // Initial state for animation
         card.style.opacity = '0';
         card.style.transform = 'translateY(50px) scale(0.9)';
         card.style.transition = 'all 0.8s cubic-bezier(0.23, 1, 0.320, 1)';
     });
     
-    // Initialize team stats counter animation
     initTeamStatsCounter();
 }
 
@@ -376,7 +360,6 @@ function initParticles() {
     const particlesContainer = document.querySelector('.particles');
     
     if (!particlesContainer) return;
-    // Create floating particles
     for (let i = 0; i < 50; i++) {
         createParticle(particlesContainer);
     }
@@ -676,7 +659,7 @@ function initMemberModal() {
                 location: 'TP. Hồ Chí Minh, Việt Nam'
             },
             github: 'https://github.com/PhuocNguyencoder',
-            website: 'https://phuocnguyencoder.github.io/'
+            website: 'https://phuocnguyencoder.github.io/-LapTrinhWeb/'
         },
         5: {
             name: 'Nguyễn Minh Huy',
@@ -992,3 +975,4 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
